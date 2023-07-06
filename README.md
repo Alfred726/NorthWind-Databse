@@ -1,21 +1,22 @@
 # NorthWind-Databse
 ## Introduction
 In this analysis, we will delve into the Northwind dataset, which consists of multiple tables capturing information related to shippers, orders, employees, products, customers, territories, and more. By leveraging SQL queries and data analysis techniques, we aim to uncover insights, identify patterns, and derive meaningful conclusions from the data. This analysis will provide us with a deeper understanding of our business operations, customer behaviors, sales trends, and other valuable aspects
+
 ### Dataset Used
 
-####Shippers:
+#### Shippers:
 ShipperID: Unique identifier for each shipper.
 CompanyName: The name of the shipping company.
 Phone: Contact phone number for the shipper.
 
-####OrderDetails:
+#### OrderDetails:
 OrderID: Unique identifier for each order.
 ProductID: Unique identifier for each product.
 UnitPrice: The price of a single unit of the product.
 Quantity: The quantity of the product ordered.
 Discount: The discount applied to the product.
 
-####Orders:
+#### Orders:
 OrderID: Unique identifier for each order.
 CustomerID: Unique identifier for each customer.
 EmployeeID: Unique identifier for each employee.
@@ -30,7 +31,7 @@ ShipCity: The shipping city.
 ShipRegion: The shipping region.
 ShipPostalCode: The postal code of the shipping address.
 
-####Employees:
+#### Employees:
 EmployeeID: Unique identifier for each employee.
 LastName: Last name of the employee.
 FirstName: First name of the employee.
@@ -50,7 +51,7 @@ Notes: Any additional notes or comments about the employee.
 ReportsTo: The ID of the employee's supervisor.
 PhotoPath: The file path or URL to the employee's photo.
 
-####Products:
+#### Products:
 ProductID: Unique identifier for each product.
 ProductName: The name of the product.
 SupplierID: Unique identifier for each supplier.
@@ -63,7 +64,7 @@ RecorderLevel: The minimum stock level at which the product should be reordered.
 Discontinued: Indicates whether the product has been discontinued.
 ShipCountry: The country associated with shipping the product.
 
-####Customers:
+#### Customers:
 CustomerID: Unique identifier for each customer.
 CompanyName: The name of the customer's company.
 ContactName: The name of the primary contact person.
@@ -76,17 +77,17 @@ Country: The country where the customer is located.
 Phone: The customer's contact phone number.
 Fax: The customer's fax number.
 
-####EmployeeTerritories:
+#### EmployeeTerritories:
 EmployeeID: Unique identifier for each employee.
 TerritoryID: Unique identifier for each territory.
 
-####Categories:
+#### Categories:
 CategoryID: Unique identifier for each category.
 CategoryName: The name of the category.
 Description: A description of the category.
 Picture: The picture or image associated with the category.
 
-####Suppliers:
+#### Suppliers:
 SupplierID: Unique identifier for each supplier.
 CompanyName: The name of the supplier's company.
 ContactName: The name of the contact person at the supplier's company.
@@ -100,19 +101,19 @@ Phone: The supplier's contact phone number.
 Fax: The supplier's fax number.
 HomePage: The URL of the supplier's website.
 
-####CustomerCustomerDemo:
+#### CustomerCustomerDemo:
 CustomerID: Unique identifier for each customer.
 CustomerTypeID: Unique identifier for each customer type.
 
-####CustomerDemographics:
+#### CustomerDemographics:
 CustomerTypeID: Unique identifier for each customer type.
 CustomerDesc: Description of the customer type.
 
-####Region:
+#### Region:
 RegionID: Unique identifier for each region.
 RegionDescription: Description of the region.
 
-####Territories:
+#### Territories:
 TerritoryID: Unique identifier for each territory.
 TerritoryDescription: Description of the territory.
 RegionID: The ID of the region to which the territory belongs.
