@@ -11,7 +11,7 @@ select "CompanyName", sum("Quantity" * "UnitPrice"*(1 - "Discount")) as total_re
 from total
 group by 1```
 
-#### Results
+### Results
 | CompanyName | total_rev |
 |---------|---------|
 | Federal Shipping  | 383405.4678346074  | 
