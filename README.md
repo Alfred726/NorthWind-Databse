@@ -119,4 +119,6 @@ TerritoryDescription: Description of the territory.
 RegionID: The ID of the region to which the territory belongs.
 
 ### Entity Relation Diagram
-![Photo](C:/Users/ALPHRED/Desktop/Northwind/NorthWind-Databse/Northwind)
+![image](https://github.com/Alfred726/NorthWind-Databse/assets/68732376/76295017-fc69-4b03-92de-5524be4102d5)
+
+
