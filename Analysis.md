@@ -1,5 +1,5 @@
 ### What is the total sales revenue for each shipper?
-```
+```sql
 with total as(select "CompanyName", "Quantity", "UnitPrice", "Discount" 
 from shippers 
 join orders 
