@@ -10,6 +10,7 @@ on orders."OrderID" = order_details."OrderID" )
 select "CompanyName", sum("Quantity" * "UnitPrice"*(1 - "Discount")) as total_rev
 from total
 group by 1```
+
 #### Results
 | CompanyName | total_rev |
 |---------|---------|
