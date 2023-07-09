@@ -1,5 +1,6 @@
 ### What is the total sales revenue for each shipper?
-```with total as(select "CompanyName", "Quantity", "UnitPrice", "Discount" 
+```
+with total as(select "CompanyName", "Quantity", "UnitPrice", "Discount" 
 from shippers 
 join orders 
 on "ShipVia" = "ShipperID"
