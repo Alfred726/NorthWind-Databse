@@ -59,7 +59,7 @@ from total
 Total revenue|Total Discounted Revenue|
 ----------|--------|
 1354458  |   1265793|
-It can be seen that total revenue without discount is higher than total revenue with discount, hence discount affects total revenue in a negative way.
+##### It can be seen that total revenue without discount is higher than total revenue with discount, hence discount affects total revenue in a negative way.
 
 ### How many orders were placed by each customer?
 ````sql
@@ -94,4 +94,52 @@ limit 1
 fullname|total_orders|
 ----------|--------|
 Margaret Peacock  |   156|
+
+### What is the average time between order placement and shipment?
+````sql
+SELECT AVG("ShippedDate" - "OrderDate") AS AverageTime
+FROM Orders
+where "ShippedDate" is not null
+````
+
+**Results**
+averagetime|
+----------|
+8.49  |
+
+
+### How many orders were shipped to each country?
+````sql
+select "ShipCountry", Count(*) country_orders
+from orders
+group by 1
+order by 2 desc
+limit 5
+````
+**Results**
+ShipCountry|Country_orders|
+----------|--------|
+Germany  |   122|
+USA   |   122|
+Brazil  |     83|
+France   |   77|
+UK  |     56|
+
+### Find the average time between consecutive orders for each customer
+````sql
+with t1 as(SELECT "CustomerID", "OrderDate",
+LAG("OrderDate") OVER (PARTITION BY "CustomerID" ORDER BY "OrderDate") AS prev_order_date
+FROM Orders)
+select "CustomerID", floor(AVG("OrderDate" - "prev_order_date")) avg_time
+from t1
+group by 1
+````
+**Results**
+CustomerID|avg_time|
+----------|--------|
+ALFKI  |   45|
+ANATR   |   177|
+ANTON  |     71|
+AROUT   |   42|
+BERGS  |     33|
 
