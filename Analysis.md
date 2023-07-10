@@ -12,8 +12,7 @@ from total
 group by 1
 ````
 
-
-** Results **
+**Results**
 CompanyName|total_rev|
 ----------|--------|
 Federal Shipping  |   383405.4678346074|
