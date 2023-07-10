@@ -19,7 +19,7 @@ Federal Shipping  |   383405.4678346074|
 Speedy Express   |   348839.93685880076|
 United Package  |     533547.6339599558|
 
-###What are the top-selling products by quantity or revenue?
+### What are the top-selling products by quantity or revenue?
 ````sql
 with total as(select "CompanyName", "Quantity", "UnitPrice", "Discount" 
 from shippers 
